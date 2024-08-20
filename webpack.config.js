@@ -1,5 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const GoogleFontsPlugin = require("google-fonts-webpack-plugin")
+
 
 const path = require('path');
 
