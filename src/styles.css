@@ -4,25 +4,27 @@
   margin: 0;
 }
 
+:root {
+  --main-color: #219ebc;
+}
+
 body {
   display: grid;
-  grid-template-rows: 8% 95%;
+  grid-template-rows: 10% 90%;
   height: 100vh;
 }
 
 .main {
   display: grid;
-  grid-template-columns: 1fr 8fr;
+  grid-template-columns: 2fr 10fr;
 }
 
 .header {
-  background-color: blue;
 }
 
 .sidebar {
-  background-color: aqua;
+  background-color: var(--main-color);
 }
 
 .todo-view {
-  background-color: black;
 }
