@@ -13,6 +13,13 @@ module.exports = {
                 test: /\.hbs$/,
                 loader: 'handlebars-loader'
             },
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    'css-loader'
+                ]
+            }
         ]
     },
     plugins: [new HtmlWebpackPlugin({
