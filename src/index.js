@@ -2,4 +2,6 @@ import "./styles.css"
 import { createProject } from "./components/generateProject"
 
 
-console.log(createProject("hiii"));
+let firstProject = createProject("hiii");
+firstProject.addTaskToProject("hiii");
+console.log(firstProject.projectTasks);

@@ -4,8 +4,8 @@ function createProject(projectName) {
     return {
         "projectName": projectName,
         "projectTasks": projectTasks,
-        addTaskToProject(name) {
-            projectTasks.add(name)
+        addTaskToProject(taskName) {
+            projectTasks.push(taskName);
         }
     }
 }
