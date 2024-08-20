@@ -42,16 +42,17 @@ body {
 
 .sidebar {
   background-color: var(--main-color);
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: white;
   font-weight: 600;
   padding: 10px;
+  padding-top: 30px;
 }
 
 .sidebar li {
   list-style: none;
 
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   padding: 10px;
 }
 
