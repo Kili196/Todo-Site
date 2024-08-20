@@ -47,6 +47,7 @@ body {
   font-weight: 600;
   padding: 10px;
   padding-top: 30px;
+  border-top-right-radius: 10px;
 }
 
 .sidebar ol {
