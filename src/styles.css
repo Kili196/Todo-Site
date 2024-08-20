@@ -2,6 +2,7 @@
   padding: 0;
   box-sizing: border-box;
   margin: 0;
+  font-family: "Oswald", sans-serif;
 }
 
 :root {
@@ -24,6 +25,20 @@ body {
 
 .sidebar {
   background-color: var(--main-color);
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.sidebar li {
+  list-style: none;
+  margin-left: 10px;
+  font-size: 1.3rem;
+  margin-top: 5px;
+}
+
+.sidebar li:hover {
 }
 
 .todo-view {
