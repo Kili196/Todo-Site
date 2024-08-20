@@ -34,12 +34,14 @@ body {
 
 .sidebar li {
   list-style: none;
-  margin-left: 10px;
+
   font-size: 1.3rem;
-  margin-top: 5px;
+  padding: 10px;
 }
 
 .sidebar li:hover {
+  background-color: var(--secondary-color);
+  border-radius: 10px;
 }
 
 .todo-view {
