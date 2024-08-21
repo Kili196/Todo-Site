@@ -8,6 +8,6 @@ firstProject.addTaskToProject("hiii");
 
 
 
-Array.from(loadDomElements().projects).map(project => project.addEventListener("click", () => {
+Array.from(loadDomElements().projects).forEach(project => project.addEventListener("click", () => {
     console.log(project.innerHTML);
 }));
