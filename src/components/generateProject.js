@@ -1,5 +1,5 @@
-import { createProject } from "./components/generateProjectObject"
-import { addProjectToDom } from "./components/addProjectDom";
+import { createProject } from "./generateProjectObject"
+import { addProjectToDom } from "./addProjectDom";
 
 const projects = [];
 
