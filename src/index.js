@@ -20,5 +20,6 @@ generateProjectAndAddItToDom("Project-4")
 
 Array.from(loadedDom.projects).forEach(project => project.addEventListener("click", () => {
     loadedDom.project_name[0].innerHTML = project.innerHTML;
-    console.log(projects[project.id].projectTasks);
+    console.log(projects[project.id].projectTasks.push("hii"));
+    console.log(projects[project.id].projectTasks)
 }));

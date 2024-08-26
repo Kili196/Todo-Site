@@ -67,6 +67,7 @@ body {
 }
 
 .todo-view {
+  margin-left: 20px;
 }
 
 .seperator {
@@ -83,8 +84,26 @@ body {
 }
 
 .project-seperator {
-  width: 90%;
+  width: 65%;
   height: 1px;
   background-color: gray;
+}
+
+.project-todos {
+  margin-top: 20px;
+}
+
+.todo {
+  width: 65%;
+  height: 80px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-left-width: thick;
+  border-left: 4px solid rgb(11, 192, 11);
+  display: flex;
+  align-items: center;
+  box-shadow: -2px 11px 44px -8px rgba(0, 0, 0, 0.48);
+}
+.todoheadline {
   margin-left: 20px;
 }
