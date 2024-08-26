@@ -10,6 +10,6 @@ addProjectToDom(firstProject);
 const loadedDom = loadDomElements();
 
 Array.from(loadedDom.projects).forEach(project => project.addEventListener("click", () => {
-
+    console.log(project)
     loadedDom.project_name[0].innerHTML = project.innerHTML;
 }));
