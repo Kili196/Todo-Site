@@ -7,7 +7,8 @@ function generateProjectAndAddItToDom(projectname) {
     let firstProject = createProject(projectname);
     firstProject.addTaskToProject("task1");
     addProjectToDom(firstProject, projects);
-    projects.push(firstProject)
+    projects.push(firstProject);
+    return firstProject;
 }
 
 export { projects, generateProjectAndAddItToDom }
