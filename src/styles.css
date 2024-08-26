@@ -103,7 +103,11 @@ body {
   display: flex;
   align-items: center;
   box-shadow: -2px 11px 44px -8px rgba(0, 0, 0, 0.48);
+  margin: 10px;
+  margin-top: 20px;
 }
 .todoheadline {
   margin-left: 20px;
+  font-size: 1.3rem;
+  font-weight: 600;
 }
