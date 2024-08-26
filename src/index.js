@@ -1,5 +1,5 @@
 import "./styles.css"
-import { createProject } from "./components/generateProject"
+import { createProject } from "./components/generateProjectObject"
 import { loadDomElements } from "./components/loadDom";
 import { addProjectToDom } from "./components/addProjectDom";
 
