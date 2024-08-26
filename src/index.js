@@ -1,13 +1,10 @@
 import "./styles.css"
-import { createProject } from "./components/generateProjectObject"
-import { loadDomElements } from "./components/loadDom";
-import { addProjectToDom } from "./components/addProjectDom";
 
-const projects = [];
-let firstProject = createProject("hiii");
-firstProject.addTaskToProject("task1");
-addProjectToDom(firstProject, projects);
-projects.push(firstProject)
+import { loadDomElements } from "./components/loadDom";
+
+
+
+
 
 
 
