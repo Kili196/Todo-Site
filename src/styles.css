@@ -8,6 +8,7 @@
 :root {
   --main-color: #219ebc;
   --secondary-color: #8ecae6;
+  --background-color: #f4f4f4;
 }
 
 body {
@@ -67,7 +68,8 @@ body {
 }
 
 .todo-view {
-  margin-left: 20px;
+  background-color: var(--background-color);
+  padding-left: 20px;
 }
 
 .seperator {
