@@ -3,6 +3,7 @@ import "./styles.css"
 import { loadDomElements } from "./components/loadDom";
 import { generateProjectAndAddItToDom, projects } from "./components/generateProject";
 import { loadTasks } from "./components/loadTasksIntoDom"
+import { compareAsc, format } from "date-fns";
 
 
 
@@ -24,3 +25,6 @@ Array.from(loadedDom.projects).forEach(project => project.addEventListener("clic
     loadTasks(projects[project.id])
 
 }));
+
+
+console.log(new Date(1995, 6, 2));
