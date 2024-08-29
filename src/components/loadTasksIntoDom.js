@@ -19,7 +19,7 @@ function loadTasks(project) {
 
         const creation_date = document.createElement("div");
         creation_date.className = "creation-date"
-        creation_date.innerHTML = task.creationDate;
+        creation_date.innerHTML = "created at " + task.creationDate;
 
         todo_div.appendChild(todoheadline_div);
         todo_div.appendChild(creation_date)
