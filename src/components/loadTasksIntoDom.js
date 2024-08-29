@@ -7,7 +7,7 @@ function loadTasks(project) {
     document.getElementsByClassName("project-todos")[0].innerHTML = ""
 
 
-    console.log(project.projectTasks.forEach(task => {
+    project.projectTasks.forEach(task => {
         const todo_div = document.createElement("div");
         todo_div.className = "todo";
 
@@ -19,7 +19,7 @@ function loadTasks(project) {
         projectTodos.appendChild(todo_div)
 
 
-    }));
+    });
 }
 
 export { loadTasks }

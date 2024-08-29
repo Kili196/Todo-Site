@@ -7,7 +7,7 @@ function addProjectToDom(project, projects) {
     project_item.innerHTML = project.projectName;
 
     loadDomElements().project_list[0].appendChild(project_item);
-    console.log(loadDomElements().project_list);
+
 }
 
 export { addProjectToDom }

@@ -21,10 +21,14 @@ generateProjectAndAddItToDom("Project-4").addTaskToProject("hiii")
 
 Array.from(loadedDom.projects).forEach(project => project.addEventListener("click", () => {
     loadedDom.project_name[0].innerHTML = project.innerHTML;
-
     loadTasks(projects[project.id])
-
 }));
 
 
-console.log(new Date(1995, 6, 2));
+
+
+const currentDate = new Date();
+const formattedDate = format(currentDate, 'EEEE, MMMM do');
+
+
+loadedDom.date_div[0].innerHTML = formattedDate
