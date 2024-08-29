@@ -109,3 +109,18 @@ body {
   font-size: 1rem;
   color: gray;
 }
+
+.add-task-button {
+  padding: 6px;
+  font-size: 1rem;
+  margin-top: 10px;
+  background-color: var(--main-color);
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.add-task-button:hover {
+  background-color: var(--secondary-color);
+}
