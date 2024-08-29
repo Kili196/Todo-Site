@@ -3,7 +3,7 @@ import "./styles.css"
 import { loadDomElements } from "./components/loadDom";
 import { generateProjectAndAddItToDom, projects } from "./components/generateProject";
 import { loadTasks } from "./components/loadTasksIntoDom"
-import { compareAsc, format } from "date-fns";
+import { compareAsc, constructFrom, format } from "date-fns";
 
 
 
@@ -21,6 +21,7 @@ generateProjectAndAddItToDom("Project-4").addTaskToProject("hiii")
 
 Array.from(loadedDom.projects).forEach(project => project.addEventListener("click", () => {
     loadedDom.project_name[0].innerHTML = project.innerHTML;
+    console.log(projects[project.id]);
     loadTasks(projects[project.id])
 }));
 

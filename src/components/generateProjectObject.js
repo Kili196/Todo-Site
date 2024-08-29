@@ -1,4 +1,4 @@
-import { loadDomElements } from "./loadDom"
+import { createTodo } from "./generateTodo"
 
 function createProject(projectName) {
     const projectTasks = [];
@@ -7,7 +7,7 @@ function createProject(projectName) {
         "projectName": projectName,
         "projectTasks": projectTasks,
         addTaskToProject(taskName) {
-            projectTasks.push(taskName);
+            projectTasks.push(createTodo(taskName));
         }
     }
 }

@@ -4,9 +4,10 @@ import { format } from "date-fns";
 
 
 
-export function createTodo(todoName) {
+
+function createTodo(todoName) {
     const creationDate = new Date();
-    const formattedDate = format(currentDate, 'EEEE, MMMM do');
+    const formattedDate = format(creationDate, 'EEEE, MMMM do');
     return ({
         "todoName": todoName, "creationDate": formattedDate
     })
