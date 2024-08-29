@@ -104,3 +104,8 @@ body {
   color: gray;
   font-size: 1.1rem;
 }
+
+.creation-date {
+  font-size: 1rem;
+  color: gray;
+}
