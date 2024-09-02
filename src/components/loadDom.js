@@ -5,10 +5,11 @@ function loadDomElements() {
     const project_todos = document.getElementsByClassName("project-todos");
     const date_div = document.getElementsByClassName("date");
     const addTaskButton = document.getElementsByClassName("add-task-button");
-    const product_view = document.getElementsByClassName("todo-view");
+    const todo_view = document.getElementsByClassName("todo-view");
+    const noProject_screen = document.getElementsByClassName("no-project-screen");
     return ({
         "projects": projects, "project_name": project_name,
-        "project_list": project_list, "project_todos": project_todos, "date_div": date_div, addTaskButton, product_view
+        "project_list": project_list, "project_todos": project_todos, "date_div": date_div, addTaskButton, todo_view: todo_view, noProject_screen
     });
 }
 
