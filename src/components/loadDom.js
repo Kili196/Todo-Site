@@ -5,9 +5,10 @@ function loadDomElements() {
     const project_todos = document.getElementsByClassName("project-todos");
     const date_div = document.getElementsByClassName("date");
     const addTaskButton = document.getElementsByClassName("add-task-button");
+    const product_view = document.getElementsByClassName("todo-view");
     return ({
         "projects": projects, "project_name": project_name,
-        "project_list": project_list, "project_todos": project_todos, "date_div": date_div, addTaskButton
+        "project_list": project_list, "project_todos": project_todos, "date_div": date_div, addTaskButton, product_view
     });
 }
 

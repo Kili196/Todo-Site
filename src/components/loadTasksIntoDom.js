@@ -5,8 +5,9 @@ import { loadDomElements } from "./loadDom";
 function loadTasks(project) {
 
     const projectTodos = loadDomElements().project_todos[0];
-    document.getElementsByClassName("project-todos")[0].innerHTML = ""
 
+
+    document.getElementsByClassName("project-todos")[0].innerHTML = ""
 
     project.projectTasks.forEach(task => {
 
