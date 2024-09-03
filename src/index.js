@@ -39,9 +39,6 @@ function updateAndLoadUi() {
             });
             isListenerAdded = true;
         }
-
-
-
     }
     else {
         loadNoProjectScreen();
