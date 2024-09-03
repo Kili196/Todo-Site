@@ -132,3 +132,30 @@ body {
   font-size: 1.3rem;
   font-weight: 500;
 }
+
+.add-task-modal {
+  margin: auto;
+  width: 25%;
+  height: 10%;
+  outline: none;
+  border: none;
+}
+
+.add-task-modal::backdrop {
+  backdrop-filter: blur(3px);
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.taskName-input {
+  border: 1px solid;
+  outline: none;
+}
+
+.taskName-input:focus {
+  border: 0px;
+}
