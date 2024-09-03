@@ -38,6 +38,7 @@ function updateAndLoadUi() {
         generateButton();
         if (isListenerAdded === false) {
             loadedDom.addTaskButton[0].addEventListener("click", () => {
+                loadedDom.taskName[0].value = "";
                 loadedDom.addTaskModal[0].showModal();
                 loadTasks(currProject);
             });
