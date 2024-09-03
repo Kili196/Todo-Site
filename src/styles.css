@@ -136,11 +136,11 @@ body {
 .add-task-modal {
   margin: auto;
   width: 25%;
-  height: 10%;
+  height: min-content;
   outline: none;
   border: none;
+  border-radius: 10px;
 }
-
 .add-task-modal::backdrop {
   backdrop-filter: blur(3px);
 }
@@ -149,13 +149,17 @@ body {
   display: flex;
   flex-direction: column;
   padding: 10px;
+  font-size: 1.1rem;
+  margin: 5px;
 }
 
 .taskName-input {
-  border: 1px solid;
+  border: 1px solid gray;
   outline: none;
+  height: 35px;
+  border-radius: 5px;
 }
 
 .taskName-input:focus {
-  border: 0px;
+  outline: none;
 }
