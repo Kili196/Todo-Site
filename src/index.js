@@ -24,6 +24,10 @@ function generateButton() {
     loadedDom.addTaskButton[0].removeAttribute("hidden");
 }
 
+function addTaskToProject() {
+    currProject.addTaskToProject(loadedDom.taskName[0].value);
+}
+
 
 function updateAndLoadUi() {
 
@@ -35,8 +39,15 @@ function updateAndLoadUi() {
         if (isListenerAdded === false) {
             loadedDom.addTaskButton[0].addEventListener("click", () => {
                 loadedDom.addTaskModal[0].showModal();
-                currProject.addTaskToProject("Task-113123213");
                 loadTasks(currProject);
+            });
+
+            loadedDom.addTaskButton[1].addEventListener("click", () => {
+                addTaskToProject();
+                loadedDom.addTaskModal[0].close();
+                loadTasks(currProject)
+
+
             });
             isListenerAdded = true;
         }
