@@ -28,25 +28,33 @@ function addTaskToProject() {
     currProject.addTaskToProject(loadedDom.taskName[0].value);
 }
 
+function showAddToTaskModal() {
+    loadedDom.taskName[0].value = "";
+    loadedDom.addTaskModal[0].showModal();
+    loadTasks(currProject);
+}
+
+function closeAddToTaskModal() {
+    addTaskToProject();
+    loadedDom.addTaskModal[0].close();
+    loadTasks(currProject)
+}
+
 
 function updateAndLoadUi() {
 
     if (currProject != null) {
 
         loadedDom.noProject_screen[0].innerHTML = "";
-        const addNewTaskButton = document.getElementsByClassName("add-task-button");
         generateButton();
         if (isListenerAdded === false) {
             loadedDom.addTaskButton[0].addEventListener("click", () => {
-                loadedDom.taskName[0].value = "";
-                loadedDom.addTaskModal[0].showModal();
-                loadTasks(currProject);
+                showAddToTaskModal();
+
             });
 
             loadedDom.addTaskButton[1].addEventListener("click", () => {
-                addTaskToProject();
-                loadedDom.addTaskModal[0].close();
-                loadTasks(currProject)
+                closeAddToTaskModal();
 
 
             });
