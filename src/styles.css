@@ -90,9 +90,22 @@ body {
   border-radius: 7px;
   display: flex;
   align-items: start;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: start;
   padding: 10px;
+  gap: 20px;
+}
+
+.checkBoxDiv {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkBoxToDeleteTask {
+  width: 20px;
+  height: 20px;
 }
 
 .todoheadline {

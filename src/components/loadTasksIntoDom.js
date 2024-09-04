@@ -14,10 +14,17 @@ function loadTasks(project) {
         const todo_div = document.createElement("div");
         todo_div.className = "todo";
 
+        const divForCheckBox = document.createElement("div");
+        divForCheckBox.className = "checkBoxDiv";
+
+
         const checkBoxToDelete = document.createElement("input");
         checkBoxToDelete.setAttribute("type", "checkbox");
+        checkBoxToDelete.className = "checkBoxToDeleteTask";
 
-        todo_div.appendChild(checkBoxToDelete);
+        divForCheckBox.appendChild(checkBoxToDelete);
+
+        todo_div.appendChild(divForCheckBox);
 
         const todoContainer = document.createElement("div");
 
