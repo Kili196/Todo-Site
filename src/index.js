@@ -65,13 +65,17 @@ function updateAndLoadUi() {
 if (loadedDom.projects != null) {
     Array.from(loadedDom.projects).forEach(project => project.addEventListener("click", () => {
         currProject = projects[project.id];
-        console.log(loadedDom.project_name[0]);
         loadedDom.project_name[0].innerHTML = project.innerHTML;
         updateAndLoadUi();
         loadTasks(currProject);
-    }));
 
+        const taskToFind = currProject.projectTasks[1];
+        console.log(taskToFind);
+        console.log(currProject.projectTasks.findIndex(task => task == taskToFind));
+    }));
 }
+
+
 
 
 updateAndLoadUi();

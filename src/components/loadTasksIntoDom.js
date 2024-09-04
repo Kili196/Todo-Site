@@ -14,6 +14,13 @@ function loadTasks(project) {
         const todo_div = document.createElement("div");
         todo_div.className = "todo";
 
+        const checkBoxToDelete = document.createElement("input");
+        checkBoxToDelete.setAttribute("type", "checkbox");
+
+        todo_div.appendChild(checkBoxToDelete);
+
+        const todoContainer = document.createElement("div");
+
         const todoheadline_div = document.createElement("div");
         todoheadline_div.className = "todoheadline"
         todoheadline_div.innerHTML = task.todoName;
@@ -22,8 +29,10 @@ function loadTasks(project) {
         creation_date.className = "creation-date"
         creation_date.innerHTML = "created at " + task.creationDate;
 
-        todo_div.appendChild(todoheadline_div);
-        todo_div.appendChild(creation_date)
+        todoContainer.appendChild(todoheadline_div);
+        todoContainer.appendChild(creation_date)
+
+        todo_div.appendChild(todoContainer);
         projectTodos.appendChild(todo_div)
 
 
