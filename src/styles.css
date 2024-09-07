@@ -176,3 +176,7 @@ body {
 .taskName-input:focus {
   outline: none;
 }
+.noTodoScreen {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
