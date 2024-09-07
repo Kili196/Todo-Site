@@ -2,10 +2,9 @@ import "./styles.css"
 
 import { loadDomElements } from "./components/loadDom";
 import { generateProjectAndAddItToDom, projects } from "./components/generateProject";
-import { loadTasks } from "./components/loadTasksIntoDom"
-import { add, format } from "date-fns";
+import { loadTasks } from "./components/manageTasksInDom"
 import { loadNoProjectScreen } from "./components/loadNoProjectScreen";
-import { tr } from "date-fns/locale";
+
 
 
 let loadedDom = loadDomElements();
@@ -20,7 +19,6 @@ let isListenerAdded = false;
 
 
 function generateButton() {
-    console.log(loadedDom.addTaskButton)
     loadedDom.addTaskButton[0].removeAttribute("hidden");
 }
 
@@ -50,13 +48,9 @@ function updateAndLoadUi() {
         if (isListenerAdded === false) {
             loadedDom.addTaskButton[0].addEventListener("click", () => {
                 showAddToTaskModal();
-
             });
-
             loadedDom.addTaskButton[1].addEventListener("click", () => {
                 closeAddToTaskModal();
-
-
             });
             isListenerAdded = true;
         }
@@ -77,10 +71,9 @@ if (loadedDom.projects != null) {
         updateAndLoadUi();
         loadTasks(currProject);
 
-        const taskToFind = currProject.projectTasks[1];
-        console.log(taskToFind);
-        console.log(currProject.projectTasks.findIndex(task => task == taskToFind));
     }));
+
+
 }
 
 
