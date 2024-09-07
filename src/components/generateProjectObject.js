@@ -8,10 +8,10 @@ function createProject(projectName) {
         "projectName": projectName,
         "projectTasks": projectTasks,
         addTaskToProject(taskName) {
-            projectTasks.push(createTodo(taskName));
+            projectTasks.push(createTodo(taskName, id));
             id++;
         },
-        "id": id,
+
     }
 }
 

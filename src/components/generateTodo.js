@@ -5,11 +5,11 @@ import { format } from "date-fns";
 
 
 
-function createTodo(todoName) {
+function createTodo(todoName, id) {
     const creationDate = new Date();
     const formattedDate = format(creationDate, 'EEEE, MMMM do');
     return ({
-        "todoName": todoName, "creationDate": formattedDate
+        "todoName": todoName, "creationDate": formattedDate, id
     })
 }
 
