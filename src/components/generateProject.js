@@ -4,11 +4,11 @@ import { addProjectToDom } from "./addProjectDom";
 const projects = [];
 
 function generateProjectAndAddItToDom(projectname) {
-    let firstProject = createProject(projectname);
-    firstProject.addTaskToProject("task1");
-    addProjectToDom(firstProject, projects);
-    projects.push(firstProject);
-    return firstProject;
+    let createdProject = createProject(projectname);
+    createdProject.addTaskToProject("task1");
+    addProjectToDom(createdProject, projects);
+    projects.push(createdProject);
+    return createdProject;
 }
 
 export { projects, generateProjectAndAddItToDom }
