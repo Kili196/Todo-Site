@@ -4,14 +4,17 @@ import { loadTasks } from "./manageTasksInDom"
 
 
 function getProjectNamesFromLocalStorage() {
-    for (const project in JSON.parse(localStorage.getItem("projects"))) {
+    const projectsFromLocalStorage = JSON.parse(localStorage.getItem("projects"));
+    for (const project in projectsFromLocalStorage) {
 
-        const projectName = JSON.parse(localStorage.getItem("projects"))[project].projectName
-        const projectFromLocalStorage = generateProjectAndAddItToDom(projectName);
+        const projectName = projectsFromLocalStorage[project].projectName
+        const generatedProjectFromLocalStorage = generateProjectAndAddItToDom(projectName);
+
         if (localStorage.getItem(projectName) !== null) {
-            for (const tasks in JSON.parse(localStorage.getItem(projectName))) {
-                projectFromLocalStorage.addTaskToProject(JSON.parse(localStorage.getItem(projectName))[tasks]);
-                loadTasks(projectFromLocalStorage);
+            const tasksFromLocalStorage = JSON.parse(localStorage.getItem(projectName));
+            for (const tasks in tasksFromLocalStorage) {
+                generatedProjectFromLocalStorage.addTaskToProject(tasksFromLocalStorage[tasks]);
+                loadTasks(generatedProjectFromLocalStorage);
             }
         }
     }

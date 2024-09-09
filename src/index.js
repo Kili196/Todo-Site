@@ -14,7 +14,6 @@ let loadedDom = loadDomElements();
 
 
 
-
 let currProject = null;
 let isListenerAdded = false;
 
