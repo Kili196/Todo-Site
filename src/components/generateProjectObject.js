@@ -8,7 +8,7 @@ function createProject(projectName) {
         "projectName": projectName,
         "projectTasks": projectTasks,
         addTaskToProject(taskName) {
-            console.log(taskName + " aaaaaaaaa")
+
 
             const createdTask = createTodo(taskName, id);
             projectTasks.push(createdTask);
