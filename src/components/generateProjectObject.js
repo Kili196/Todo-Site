@@ -8,7 +8,9 @@ function createProject(projectName) {
         "projectName": projectName,
         "projectTasks": projectTasks,
         addTaskToProject(taskName) {
-            projectTasks.push(createTodo(taskName, id));
+            const createdTask = createTodo(taskName, id);
+            projectTasks.push(createdTask);
+            localStorage.setItem(projectName, projectTasks);
             id++;
         },
 

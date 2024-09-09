@@ -45,15 +45,10 @@ function loadTasks(project) {
 
     const projectTodos = loadDomElements().project_todos[0];
 
-
-
-
     document.getElementsByClassName("project-todos")[0].innerHTML = ""
     if (project.projectTasks.length != 0) {
 
         project.projectTasks.forEach(task => {
-
-
             const todo_div = document.createElement("div");
             todo_div.className = "todo";
 
