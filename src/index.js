@@ -4,20 +4,22 @@ import { loadDomElements } from "./components/loadDom";
 import { generateProjectAndAddItToDom, projects } from "./components/generateProject";
 import { loadTasks } from "./components/manageTasksInDom"
 import { loadNoProjectScreen } from "./components/loadNoProjectScreen";
+import { getProjectNamesFromLocalStorage } from "./components/addProjectAndTaskToLocalStorage"
 
 
 
 
 let loadedDom = loadDomElements();
 
-generateProjectAndAddItToDom("Project-1")
-generateProjectAndAddItToDom("Project-2")
-generateProjectAndAddItToDom("Project-3")
-generateProjectAndAddItToDom("Project-4")
+
+
 
 
 let currProject = null;
 let isListenerAdded = false;
+
+getProjectNamesFromLocalStorage();
+
 
 
 function generateButton() {
@@ -77,6 +79,7 @@ if (loadedDom.projects != null) {
 
 
 }
+
 
 
 
