@@ -5,9 +5,9 @@ const projects = [];
 
 function generateProjectAndAddItToDom(projectname) {
     let createdProject = createProject(projectname);
-
     addProjectToDom(createdProject, projects);
     projects.push(createdProject);
+    localStorage.setItem("projects", JSON.stringify(projects));
     return createdProject;
 }
 
