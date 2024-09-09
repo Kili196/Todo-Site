@@ -6,6 +6,7 @@ function deleteTaskFromDom(todo_div, checkBoxToDelete, project) {
     const taskToFind = checkBoxToDelete.id;
     todo_div.remove();
     project.projectTasks.splice(project.projectTasks.findIndex(task => task.id === taskToFind), 1);
+
 }
 
 function showNoTaskScreen(projectTodos) {
@@ -55,7 +56,6 @@ function loadTasks(project) {
             const divForCheckBox = document.createElement("div");
             divForCheckBox.className = "checkBoxDiv";
 
-
             const checkBoxToDelete = generateCheckBox(task);
 
             checkBoxToDelete.addEventListener("click", () => {
@@ -78,8 +78,6 @@ function loadTasks(project) {
     }
     else {
         showNoTaskScreen(projectTodos);
-
-
     }
 }
 

@@ -5,7 +5,7 @@ const projects = [];
 
 function generateProjectAndAddItToDom(projectname) {
     let createdProject = createProject(projectname);
-    createdProject.addTaskToProject("task1");
+
     addProjectToDom(createdProject, projects);
     projects.push(createdProject);
     return createdProject;

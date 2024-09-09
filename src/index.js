@@ -12,7 +12,7 @@ let loadedDom = loadDomElements();
 generateProjectAndAddItToDom("Project-1")
 generateProjectAndAddItToDom("Project-2")
 generateProjectAndAddItToDom("Project-3")
-generateProjectAndAddItToDom("Project-4").addTaskToProject("hiii")
+generateProjectAndAddItToDom("Project-4")
 
 let currProject = null;
 let isListenerAdded = false;
